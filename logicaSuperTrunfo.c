@@ -8,12 +8,12 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
-    char estado1, codigo1[4], nome1[50];
+    char estado1[3], codigo1[4], nome1[50];
     unsigned long int populacao1;
     float area1, pib1;
     int pontosTuristicos1;
     
-    char estado2, codigo2[4], nome2[50];
+    char estado2[3], codigo2[4], nome2[50];
     unsigned long int populacao2;
     float area2, pib2;
     int pontosTuristicos2;
@@ -25,8 +25,8 @@ int main() {
 
     //Cadastro da Carta 1
     printf("--- Cadastro da Carta 1 ---\n");
-    printf("Estado (A-H): ");
-    scanf(" %c", &estado1);
+    printf("Estado (Sigla): ");
+    scanf("%2s", estado1);
     printf("Código da Carta (ex: A01): ");
     scanf("%s", codigo1);
     printf("Nome da Cidade: ");
@@ -42,8 +42,8 @@ int main() {
 
     //Cadastro da Carta 2
     printf("\n--- Cadastro da Carta 2 ---\n");
-    printf("Estado (A-H): ");
-    scanf(" %c", &estado2);
+    printf("Estado (Sigla): ");
+    scanf("%2s", estado2);
     printf("Código da Carta (ex: B02): ");
     scanf("%s", codigo2);
     printf("Nome da Cidade: ");
